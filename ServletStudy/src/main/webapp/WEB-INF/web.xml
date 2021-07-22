@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+                      http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
+         version="4.0"
+         metadata-complete="true">
+
+    <servlet>
+        <servlet-name>hello</servlet-name>
+        <servlet-class>com.fan.web.servlet.HelloServlet</servlet-class>
+        <!--指定Servlet的创建时间
+            1.第一被访问时创建, load-on-startup配置的值为负数, 默认也是-1
+            2.在服务器启动时创建, load-on-startup配置的值为0或正数
+        <load-on-startup>-1</load-on-startup>
+        -->
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>hello</servlet-name>
+        <url-pattern>/hello</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>first</servlet-name>
+        <servlet-class>com.fan.web.servlet.FirstServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>first</servlet-name>
+        <url-pattern>/first</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>test</servlet-name>
+        <servlet-class>com.fan.web.servlet.TestServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>test</servlet-name>
+        <url-pattern>/user/testServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>register</servlet-name>
+        <servlet-class>com.fan.web.servlet.RegServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>register</servlet-name>
+        <url-pattern>/RegServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>response_01</servlet-name>
+        <servlet-class>com.fan.web.servlet.ResponseServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>response_01</servlet-name>
+        <url-pattern>/resp1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>response_02</servlet-name>
+        <servlet-class>com.fan.web.servlet.ResponseServlet_02</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>response_02</servlet-name>
+        <url-pattern>/resp2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mycontext_01</servlet-name>
+        <servlet-class>com.fan.web.servletContext.MyContext</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mycontext_01</servlet-name>
+        <url-pattern>/mycontext1</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>download</servlet-name>
+        <servlet-class>com.fan.web.servlet.DownloadServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>download</servlet-name>
+        <url-pattern>/download</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>myCookie</servlet-name>
+        <servlet-class>com.fan.web.cookies.MyCookie</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>myCookie</servlet-name>
+        <url-pattern>/myCookie</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>myCookie2</servlet-name>
+        <servlet-class>com.fan.web.cookies.MyCookie_02</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>myCookie2</servlet-name>
+        <url-pattern>/myCookie2</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>cookieDemo</servlet-name>
+        <servlet-class>com.fan.web.cookies.CookieDemo</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>cookieDemo</servlet-name>
+        <url-pattern>/cookieDemo</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mySession</servlet-name>
+        <servlet-class>com.fan.web.session.MySession</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mySession</servlet-name>
+        <url-pattern>/mySession</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>mySession02</servlet-name>
+        <servlet-class>com.fan.web.session.MySession_02</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>mySession02</servlet-name>
+        <url-pattern>/mySession02</url-pattern>
+    </servlet-mapping>
+
+    <!--过滤器-->
+    <filter>
+        <filter-name>filter01</filter-name>
+        <filter-class>com.fan.web.filters.MyFilter_01</filter-class>
+    </filter>
+    
+    <filter-mapping>
+        <filter-name>filter01</filter-name>
+        <url-pattern>/*</url-pattern>  <!--拦截路径-->
+        <dispatcher>REQUEST</dispatcher>
+    </filter-mapping>
+
+    <!--监听器-->
+    <listener>
+        <listener-class>com.fan.web.listener.ContextLoaderListener</listener-class>
+    </listener>
+    
+    <!--指定初始化参数-->
+    <!--
+    <context-param>
+        <param-name>contextConfigLocation</param-name>
+        <param-value>xxx.xml</param-value>
+    </context-param>
+    -->
+</web-app>
+
