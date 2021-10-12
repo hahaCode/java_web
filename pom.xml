@@ -17,6 +17,7 @@
     <modules>
         <module>ServletStudy</module>
         <module>VerificationCode</module>
+        <module>NettyStudy</module>
     </modules>
 
     <properties>
