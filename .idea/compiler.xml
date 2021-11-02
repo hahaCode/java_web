@@ -7,10 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="ServletStudy" />
+        <module name="rpc-server-sms" />
         <module name="NettyStudy" />
+        <module name="rpc-local-sevice" />
         <module name="VerificationCode" />
+        <module name="rpc-reg-center" />
+        <module name="ServletStudy" />
       </profile>
     </annotationProcessing>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="NettyStudy" options="-parameters" />
+      <module name="ServletStudy" options="-parameters" />
+      <module name="VerificationCode" options="-parameters" />
+      <module name="rpc-local-sevice" options="-parameters" />
+      <module name="rpc-reg-center" options="-parameters" />
+      <module name="rpc-server-sms" options="-parameters" />
+    </option>
   </component>
 </project>
