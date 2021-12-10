@@ -1,0 +1,1 @@
+(()=>{var t={855:t=>{t.exports={num:19,add:function(t,r){return t+r},test:function(t){return t}}},266:(t,r,n)=>{const{num:o,add:e,test:s}=n(855);let u=e(o,20);t.exports={sum:u}}},r={};function n(o){var e=r[o];if(void 0!==e)return e.exports;var s=r[o]={exports:{}};return t[o](s,s.exports,n),s.exports}(()=>{const{sum:t}=n(266);console.log("卡克",t)})()})();
