@@ -68,3 +68,18 @@
       plugins: 插件用于执行更广的任务, 插件的范围包括, 从打包优化和压缩, 一直到重新定义环境变量中的变量等
       mode: development/production
    ```
+
+#### devServer
+   1. devServer给我们提供了开发过程中的服务器, 是一个使用express的Http服务器, 它的主要作用是为了监听资源文件的改变, 该hhtp服务器和client使用了websocket通信协议, 只要资源文件发生了改变, webpack-dev-server就会实时的进行编译
+   > * 只会在内存编译, 不会有任何输出, 不会有webpack打包的那个目录
+   > * webpack-dev-server并不能读取webpack.config.js的配置output
+   > * 启动devServer的指令是: webpack serve --port, 一般会写到package.json的scripts里
+   > * webpack5不能刷新打开浏览器, 解决办法: 在webpack.config.js 里添加配置 target : "web"
+
+#### 环境优化
+   1. 开发环境的优化
+> * 打包构建速度
+> * 优化代码调试
+
+   2. 生产环境的优化
+> * 优化代码运行的性能

@@ -46,3 +46,25 @@ module.exports = {
     //mode: 'production' //生产模式
     mode: 'development'
 }
+
+// 分别打包不同的html和js
+// entry: {
+//    vendor: ['./src/jquery.js', './src/common.js'], 
+//    index: './src/index.js',
+//    cart: './src/cart.js',
+// },
+
+// plugins: [
+//     //默认会创建一个空的, 目的就是自动引入打包的资源
+//     //new HtmlWebpackPlugin()
+//     new HtmlWebpackPlugin({
+//         template: './src/index.html',
+//         filename: "demo.html",
+//         chunks: ['index', 'vendor']
+//     }),
+//     new HtmlWebpackPlugin({
+//         template: './src/cart.html',
+//         filename: "cart.html",
+//         chunks: ['cart', 'vendor']
+//     })
+// ],
