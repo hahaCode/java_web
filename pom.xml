@@ -21,6 +21,7 @@
         <module>rpc-server-sms</module>
         <module>rpc-local-sevice</module>
         <module>rpc-reg-center</module>
+        <module>TreeStructure</module>
     </modules>
 
     <parent>
