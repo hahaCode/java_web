@@ -14,6 +14,7 @@
         <module name="TreeStructure" />
         <module name="NettyStudy" />
         <module name="rpc-local-sevice" />
+        <module name="TreeStructureJPA" />
       </profile>
     </annotationProcessing>
   </component>
@@ -22,6 +23,7 @@
       <module name="NettyStudy" options="-parameters" />
       <module name="ServletStudy" options="-parameters" />
       <module name="TreeStructure" options="-parameters" />
+      <module name="TreeStructureJPA" options="-parameters" />
       <module name="VerificationCode" options="-parameters" />
       <module name="rpc-local-sevice" options="-parameters" />
       <module name="rpc-reg-center" options="-parameters" />

@@ -16,17 +16,11 @@ spring:
       initial-size: 5                            # 初始化连接数
       max-total: 5                               # 最大连接数
       max-wait-millis: 150                       # 等待连接获取的最大超时时间
-
-
-# mybatis配置
-#mybatis:
-#  mapper-locations: classpath:mapper/*.xml    # mapper映射文件位置
-#  type-aliases-package: net.zfcloud.domain   # 实体类所在的位置
-#  configuration:
-#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl   #用于控制台打印sql语句
-
-mybatis-plus:
-  mapper-locations: classpath:mapper/*.xml
-  type-aliases-package: net.zfcloud.domain
-  configuration:
-    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+  jpa:
+    show-sql: true
+    database: MySQL
+    database-platform: org.hibernate.dialect.MySQLInnoDBDialect
+    hibernate:
+      ddl-auto: update
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl

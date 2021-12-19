@@ -22,6 +22,7 @@
         <module>rpc-local-sevice</module>
         <module>rpc-reg-center</module>
         <module>TreeStructure</module>
+        <module>TreeStructureJPA</module>
     </modules>
 
     <parent>

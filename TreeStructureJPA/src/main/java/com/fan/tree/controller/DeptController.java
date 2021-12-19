@@ -1,6 +1,6 @@
 package com.fan.tree.controller;
 
-import com.fan.tree.domain.Department;
+import com.fan.tree.entity.Department;
 import com.fan.tree.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
