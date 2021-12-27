@@ -35,7 +35,6 @@ public class DeptService {
         deptRepo.save(department);
     }
 
-    //有问题
     public void deleteDepartment(Integer deptCode){
         //递归删除
         //找到要删除的部门的所有子部门
@@ -43,7 +42,6 @@ public class DeptService {
         childDeptList.forEach(department -> deleteDepartment(department.getDeptCode()));
 
         //删除自己
-        //deptRepo.deleteDepartment(deptCode);
-        deptRepo.delete(deptRepo.findById(deptCode).get());
+        deptRepo.delete(deptRepo.findByDeptCode(deptCode));
     }
 }

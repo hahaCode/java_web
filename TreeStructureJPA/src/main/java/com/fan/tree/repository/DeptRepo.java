@@ -18,6 +18,8 @@ public interface DeptRepo extends CrudRepository<Department, Integer>{ //JpaRepo
     //@Query("from Department where parentCode=:parentCode")
     //public List<Department> findAllDept(@Param("parentCode") Integer parentCode);
     List<Department> findByParentCode(Integer parentCode);
+
+    Department findByDeptCode(Integer deptCode);
 //
 //   //@Insert("insert into dept(deptCode, parentCode, deptName, deptLeader, deptState, deptDesc) values (#{deptCode}, #{parentCode}, #{deptName}, #{deptLeader}, #{deptState}, #{deptDesc})")
 //    @Modifying
