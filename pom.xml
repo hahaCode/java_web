@@ -23,6 +23,7 @@
         <module>rpc-reg-center</module>
         <module>TreeStructure</module>
         <module>TreeStructureJPA</module>
+        <module>algo</module>
     </modules>
 
     <parent>
