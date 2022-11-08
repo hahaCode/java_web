@@ -1,4 +1,4 @@
-package com.fan.juc.basic;
+package basic.sync;
 
 
 class Ticket{

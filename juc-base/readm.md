@@ -18,4 +18,15 @@
 #### 2.2 多线程编程步骤
      + 创建资源类，创建属性和操作方法
      + 创建多线程调用资源类的方法
-     + 
+
+#### 2.3 Lock和Synchronized区别
+     + Lock不是Jave语言内置的, synchronized是java语言的关键字，是内置特性，Lock是一个类，通过这个类可以实现同步访问
+     + Lock和sychronized有一点非常大的不同，采用synchronized不需要用户去手动释放锁，当synchrozied方法或者synchronized代码块执行完之后，系统会自动让线程释放对锁
+       的占用；而Lock则必须手动释放锁，如果没有主动释放锁，就可能导致死锁现象
+     + synchronized在发生异常时，会自动释放线程占有的锁，因此不会导致死锁现象发生；而lock在发生异常时，如果没有主动释放锁，很可能会造成死锁现象，因此使用lock需要在finally
+       块中释放锁
+     + lock可以让等待锁的线程相应中断，但synchronized却不行，使用synchronized却无法做到
+     + lock可以提高多个线程进行读操作的效率
+     + 性能上来看，如果有大量线程同时竞争，此时lock的性能要远大于synchronized
+     
+

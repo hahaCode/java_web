@@ -24,6 +24,7 @@
         <module>TreeStructure</module>
         <module>TreeStructureJPA</module>
         <module>algo</module>
+        <module>juc-base</module>
     </modules>
 
     <parent>
