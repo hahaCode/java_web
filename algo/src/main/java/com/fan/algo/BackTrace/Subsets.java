@@ -1,9 +1,9 @@
-package com.fan.algo;
+package com.fan.algo.BackTrace;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
-
+//https://leetcode.cn/problems/subsets/
 public class Subsets {
     public static void main(String[] args) {
 

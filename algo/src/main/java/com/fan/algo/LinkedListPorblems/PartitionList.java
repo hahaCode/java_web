@@ -1,5 +1,7 @@
-package com.fan.algo;
+package com.fan.algo.LinkedListPorblems;
 
+import com.fan.algo.LinkedListPorblems.ListNode;
+//https://leetcode.cn/problems/partition-list/
 public class PartitionList {
     public static void main(String[] args) {
 

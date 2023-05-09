@@ -1,4 +1,4 @@
-package com.fan.algo;
+package com.fan.algo.BackTrace;
 
 import java.util.ArrayList;
 import java.util.List;

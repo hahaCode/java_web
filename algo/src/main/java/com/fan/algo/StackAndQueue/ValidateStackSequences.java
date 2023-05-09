@@ -1,7 +1,7 @@
-package com.fan.algo;
+package com.fan.algo.StackAndQueue;
 
 import java.util.Stack;
-
+// https://leetcode.cn/problems/validate-stack-sequences/
 public class ValidateStackSequences {
     public static void main(String[] args) {
         int[] pushed = new int[]{1, 2, 3, 4, 5};

@@ -1,9 +1,10 @@
-package com.fan.algo;
+package com.fan.algo.BinaryTreeProblems;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 
+//https://leetcode.cn/problems/path-sum-ii/
 public class PathSumii {
     List<List<Integer>> res = new LinkedList<>();
 

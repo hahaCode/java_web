@@ -1,4 +1,6 @@
-package com.fan.algo;
+package com.fan.algo.BinaryTreeProblems;
+
+import com.fan.algo.BinaryTreeProblems.TreeNode;
 
 //https://leetcode.cn/problems/flatten-binary-tree-to-linked-list/
 public class FlattenBinaryTreeToLinkedList {
@@ -6,7 +8,7 @@ public class FlattenBinaryTreeToLinkedList {
 
     }
 
-    //传入二叉树的跟节点, 将其拉平为链表
+    //传入二叉树的根节点, 将其拉平为链表
     public void flatten(TreeNode root) {
 
         if (root == null) return;

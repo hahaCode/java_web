@@ -1,4 +1,4 @@
-package com.fan.algo;
+package com.fan.algo.BinarySearchTreeProblems;
 
 // https://leetcode.cn/problems/convert-bst-to-greater-tree/
 public class ConvertBstToGreaterTree {

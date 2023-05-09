@@ -1,7 +1,8 @@
-package com.fan.algo;
+package com.fan.algo.StackAndQueue;
 
 import java.util.Stack;
 
+//https://leetcode.cn/problems/min-stack/
 public class MinStack {
 
     private Stack<Integer> stack = new Stack<>();

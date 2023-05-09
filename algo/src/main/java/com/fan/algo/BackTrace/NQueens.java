@@ -1,10 +1,9 @@
-package com.fan.algo;
+package com.fan.algo.BackTrace;
 
-import java.io.FilterOutputStream;
 import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.List;
 
+// https://leetcode.cn/problems/n-queens/
 public class NQueens {
     public static void main(String[] args) {
         NQueens nQueens = new NQueens();

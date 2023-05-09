@@ -1,8 +1,8 @@
-package com.fan.algo;
+package com.fan.algo.StackAndQueue;
 
 import java.util.List;
 import java.util.Stack;
-
+//https://leetcode.cn/problems/implement-queue-using-stacks/
 public class ImplementQueueUsingStacks {
 }
 

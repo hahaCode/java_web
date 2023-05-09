@@ -1,4 +1,4 @@
-package com.fan.algo;
+package com.fan.algo.LinkedListPorblems;
 
 import java.util.Scanner;
 //https://leetcode.cn/problems/reverse-linked-list/

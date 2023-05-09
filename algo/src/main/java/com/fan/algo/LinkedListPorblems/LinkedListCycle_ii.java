@@ -1,5 +1,8 @@
-package com.fan.algo;
+package com.fan.algo.LinkedListPorblems;
 
+import com.fan.algo.LinkedListPorblems.ListNode;
+
+// https://leetcode.cn/problems/linked-list-cycle-ii/
 public class LinkedListCycle_ii {
 
     public static void main(String[] args) {

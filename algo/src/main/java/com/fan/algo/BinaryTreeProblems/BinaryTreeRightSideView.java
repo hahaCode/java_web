@@ -1,4 +1,6 @@
-package com.fan.algo;
+package com.fan.algo.BinaryTreeProblems;
+
+import com.fan.algo.BinaryTreeProblems.TreeNode;
 
 import java.util.ArrayList;
 import java.util.LinkedList;

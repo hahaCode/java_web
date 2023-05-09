@@ -1,7 +1,5 @@
-package com.fan.algo;
-
-import java.util.List;
-
+package com.fan.algo.LinkedListPorblems;
+//https://leetcode.cn/problems/merge-two-sorted-lists/
 public class MergeTwoSortedlists {
     public static void main(String[] args) {
 

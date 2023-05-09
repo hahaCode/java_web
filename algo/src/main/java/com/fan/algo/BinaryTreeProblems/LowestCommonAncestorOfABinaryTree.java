@@ -1,4 +1,4 @@
-package com.fan.algo;
+package com.fan.algo.BinaryTreeProblems;
 
 //public class LowestCommonAncestorOfABinaryTree {
 //    TreeNode res = null;
@@ -23,6 +23,8 @@ package com.fan.algo;
 //    }
 //}
 
+import com.fan.algo.BinaryTreeProblems.TreeNode;
+//https://leetcode.cn/problems/lowest-common-ancestor-of-a-binary-tree/
 public class LowestCommonAncestorOfABinaryTree {
 
     public TreeNode lowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q) {

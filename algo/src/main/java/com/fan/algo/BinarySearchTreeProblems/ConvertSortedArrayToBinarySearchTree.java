@@ -1,4 +1,4 @@
-package com.fan.algo;
+package com.fan.algo.BinarySearchTreeProblems;
 
 //https://leetcode.cn/problems/convert-sorted-array-to-binary-search-tree/
 public class ConvertSortedArrayToBinarySearchTree {
@@ -10,10 +10,29 @@ public class ConvertSortedArrayToBinarySearchTree {
 
         if (low >= high) return null;
 
-        int mid = (high - low)/2 + low;
+        int mid = (high - low) / 2 + low;
         TreeNode root = new TreeNode(nums[mid]);
         root.left = buildBST(nums, low, mid);
-        root.right = buildBST(nums, mid+1, high);
+        root.right = buildBST(nums, mid + 1, high);
         return root;
+    }
+}
+
+class TreeNode {
+    int val;
+    TreeNode left;
+    TreeNode right;
+
+    TreeNode() {
+    }
+
+    TreeNode(int val) {
+        this.val = val;
+    }
+
+    TreeNode(int val, TreeNode left, TreeNode right) {
+        this.val = val;
+        this.left = left;
+        this.right = right;
     }
 }
