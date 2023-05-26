@@ -6,6 +6,9 @@ import java.util.List;
 
 //https://leetcode.cn/problems/path-sum-ii/
 public class PathSumii {
+    public static void main(String[] args) {
+
+    }
     List<List<Integer>> res = new LinkedList<>();
 
     List<Integer> trace = new ArrayList<>();
