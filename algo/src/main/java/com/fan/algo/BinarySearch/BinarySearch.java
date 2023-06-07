@@ -1,4 +1,4 @@
-package com.fan.algo;
+package com.fan.algo.BinarySearch;
 
 /**
  * https://leetcode.com/problems/binary-search/
